@@ -12,12 +12,12 @@
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&hide=contribs&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=e5e7eb"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&hide=contribs&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=1f2937" alt="stats"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&hide=contribs&hide_rank=true&card_width=380&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=e5e7eb"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&hide=contribs&hide_rank=true&card_width=380&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=1f2937" alt="stats"/>
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=SU4G3&layout=compact&langs_count=6&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=e5e7eb"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SU4G3&layout=compact&langs_count=6&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=1f2937" alt="top languages"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=SU4G3&layout=compact&card_width=380&langs_count=6&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=e5e7eb"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SU4G3&layout=compact&card_width=380&langs_count=6&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=22d3ee&text_color=1f2937" alt="top languages"/>
 </picture>
 
 </div>

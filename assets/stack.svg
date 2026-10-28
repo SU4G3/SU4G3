@@ -1,27 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="188" viewBox="0 0 1200 188">
-<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="188" viewBox="0 0 1200 188">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}.sw{animation:sw 7s ease-in-out infinite}@keyframes sw{0%{transform:skewX(-20deg) translateX(0)}60%,100%{transform:skewX(-20deg) translateX(1900px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
 <defs>
-<g id="blobs"><circle cx="200" cy="60" r="120" fill="#06b6d4"><animate attributeName="cx" values="200;360;200" dur="15s" repeatCount="indefinite"/></circle><circle cx="700" cy="140" r="140" fill="#7c3aed"><animate attributeName="cx" values="700;560;700" dur="17s" repeatCount="indefinite"/></circle><circle cx="1050" cy="50" r="110" fill="#ec4899"><animate attributeName="cx" values="1050;990;1050" dur="13s" repeatCount="indefinite"/><animate attributeName="cy" values="50;110;50" dur="17s" repeatCount="indefinite"/></circle><circle cx="450" cy="0" r="90" fill="#3b82f6"><animate attributeName="cx" values="450;530;450" dur="19s" repeatCount="indefinite"/><animate attributeName="cy" values="0;60;0" dur="25s" repeatCount="indefinite"/></circle></g>
-<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
-<filter id="frost" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/><feColorMatrix type="saturate" values="1.4"/></filter>
-<filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
-<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".45" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
-<linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<linearGradient id="ink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ddd6fe"/></linearGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="1.3" fill="#fff" fill-opacity=".16"/></pattern>
+<radialGradient id="vignette" cx=".5" cy=".5" r=".75"><stop offset="0" stop-color="#1c1c22"/><stop offset="1" stop-color="#0b0b0e"/></radialGradient>
+<filter id="frost" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="1.2"/></filter>
+<filter id="shadow" x="-20%" y="-30%" width="140%" height="170%"><feGaussianBlur stdDeviation="14"/></filter>
+<filter id="inner"><feGaussianBlur stdDeviation="6"/></filter>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity=".03"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset=".3" stop-color="#fff" stop-opacity=".18"/><stop offset=".7" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity=".72"/></linearGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <clipPath id="outer"><rect width="1200" height="188" rx="28"/></clipPath>
-<clipPath id="glass"><rect x="299.2" y="34" width="86.0" height="48" rx="24"/><rect x="399.2" y="34" width="149.0" height="48" rx="24"/><rect x="562.2" y="34" width="107.0" height="48" rx="24"/><rect x="683.2" y="34" width="96.5" height="48" rx="24"/><rect x="793.8" y="34" width="107.0" height="48" rx="24"/><rect x="236.2" y="106" width="107.0" height="48" rx="24"/><rect x="357.2" y="106" width="128.0" height="48" rx="24"/><rect x="499.2" y="106" width="96.5" height="48" rx="24"/><rect x="609.8" y="106" width="107.0" height="48" rx="24"/><rect x="730.8" y="106" width="233.0" height="48" rx="24"/></clipPath>
+<clipPath id="all"><rect x="299.2" y="34" width="86.0" height="48" rx="24"/><rect x="399.2" y="34" width="149.0" height="48" rx="24"/><rect x="562.2" y="34" width="107.0" height="48" rx="24"/><rect x="683.2" y="34" width="96.5" height="48" rx="24"/><rect x="793.8" y="34" width="107.0" height="48" rx="24"/><rect x="236.2" y="106" width="107.0" height="48" rx="24"/><rect x="357.2" y="106" width="128.0" height="48" rx="24"/><rect x="499.2" y="106" width="96.5" height="48" rx="24"/><rect x="609.8" y="106" width="107.0" height="48" rx="24"/><rect x="730.8" y="106" width="233.0" height="48" rx="24"/></clipPath>
 </defs>
 <g clip-path="url(#outer)">
-<rect width="1200" height="188" fill="#0a0a14"/>
-<use href="#blobs" xlink:href="#blobs" filter="url(#soft)" opacity=".9"/>
-<rect x="299.2" y="44" width="86.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="399.2" y="44" width="149.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="562.2" y="44" width="107.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="683.2" y="44" width="96.5" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="793.8" y="44" width="107.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="236.2" y="116" width="107.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="357.2" y="116" width="128.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="499.2" y="116" width="96.5" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="609.8" y="116" width="107.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/><rect x="730.8" y="116" width="233.0" height="48" rx="24" fill="#000" opacity=".45" filter="url(#shadow)"/>
-<g clip-path="url(#glass)">
-<rect width="1200" height="188" fill="#0a0a14"/>
-<use href="#blobs" xlink:href="#blobs" filter="url(#frost)"/>
-<rect width="1200" height="188" fill="#fff" opacity=".10"/>
-<rect x="299.2" y="34" width="86.0" height="24.0" fill="url(#shine)"/><rect x="399.2" y="34" width="149.0" height="24.0" fill="url(#shine)"/><rect x="562.2" y="34" width="107.0" height="24.0" fill="url(#shine)"/><rect x="683.2" y="34" width="96.5" height="24.0" fill="url(#shine)"/><rect x="793.8" y="34" width="107.0" height="24.0" fill="url(#shine)"/><rect x="236.2" y="106" width="107.0" height="24.0" fill="url(#shine)"/><rect x="357.2" y="106" width="128.0" height="24.0" fill="url(#shine)"/><rect x="499.2" y="106" width="96.5" height="24.0" fill="url(#shine)"/><rect x="609.8" y="106" width="107.0" height="24.0" fill="url(#shine)"/><rect x="730.8" y="106" width="233.0" height="24.0" fill="url(#shine)"/>
+<rect width="1200" height="188" fill="url(#vignette)"/>
+<rect width="1200" height="188" fill="url(#dots)"/>
+<rect x="299.2" y="42" width="86.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="399.2" y="42" width="149.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="562.2" y="42" width="107.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="683.2" y="42" width="96.5" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="793.8" y="42" width="107.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="236.2" y="114" width="107.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="357.2" y="114" width="128.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="499.2" y="114" width="96.5" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="609.8" y="114" width="107.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/><rect x="730.8" y="114" width="233.0" height="48" rx="24" fill="#000" opacity=".55" filter="url(#shadow)"/>
+<clipPath id="c0"><rect x="299.2" y="34" width="86.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c0)">
+<rect x="299.2" y="34" width="86.0" height="48" fill="#16161c"/>
+<g transform="translate(342.2 58.0) scale(1.18) translate(-342.2 -58.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="299.2" y="34" width="86.0" height="48" fill="url(#body)"/>
+<rect x="299.2" y="34" width="86.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="299.2" y="34" width="86.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c1"><rect x="399.2" y="34" width="149.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c1)">
+<rect x="399.2" y="34" width="149.0" height="48" fill="#16161c"/>
+<g transform="translate(473.7 58.0) scale(1.18) translate(-473.7 -58.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="399.2" y="34" width="149.0" height="48" fill="url(#body)"/>
+<rect x="399.2" y="34" width="149.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="399.2" y="34" width="149.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c2"><rect x="562.2" y="34" width="107.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c2)">
+<rect x="562.2" y="34" width="107.0" height="48" fill="#16161c"/>
+<g transform="translate(615.7 58.0) scale(1.18) translate(-615.7 -58.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="562.2" y="34" width="107.0" height="48" fill="url(#body)"/>
+<rect x="562.2" y="34" width="107.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="562.2" y="34" width="107.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c3"><rect x="683.2" y="34" width="96.5" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c3)">
+<rect x="683.2" y="34" width="96.5" height="48" fill="#16161c"/>
+<g transform="translate(731.45 58.0) scale(1.18) translate(-731.45 -58.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="683.2" y="34" width="96.5" height="48" fill="url(#body)"/>
+<rect x="683.2" y="34" width="96.5" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="683.2" y="34" width="96.5" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c4"><rect x="793.8" y="34" width="107.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c4)">
+<rect x="793.8" y="34" width="107.0" height="48" fill="#16161c"/>
+<g transform="translate(847.3 58.0) scale(1.18) translate(-847.3 -58.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="793.8" y="34" width="107.0" height="48" fill="url(#body)"/>
+<rect x="793.8" y="34" width="107.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="793.8" y="34" width="107.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c5"><rect x="236.2" y="106" width="107.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c5)">
+<rect x="236.2" y="106" width="107.0" height="48" fill="#16161c"/>
+<g transform="translate(289.7 130.0) scale(1.18) translate(-289.7 -130.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="236.2" y="106" width="107.0" height="48" fill="url(#body)"/>
+<rect x="236.2" y="106" width="107.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="236.2" y="106" width="107.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c6"><rect x="357.2" y="106" width="128.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c6)">
+<rect x="357.2" y="106" width="128.0" height="48" fill="#16161c"/>
+<g transform="translate(421.2 130.0) scale(1.18) translate(-421.2 -130.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="357.2" y="106" width="128.0" height="48" fill="url(#body)"/>
+<rect x="357.2" y="106" width="128.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="357.2" y="106" width="128.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c7"><rect x="499.2" y="106" width="96.5" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c7)">
+<rect x="499.2" y="106" width="96.5" height="48" fill="#16161c"/>
+<g transform="translate(547.45 130.0) scale(1.18) translate(-547.45 -130.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="499.2" y="106" width="96.5" height="48" fill="url(#body)"/>
+<rect x="499.2" y="106" width="96.5" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="499.2" y="106" width="96.5" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c8"><rect x="609.8" y="106" width="107.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c8)">
+<rect x="609.8" y="106" width="107.0" height="48" fill="#16161c"/>
+<g transform="translate(663.3 130.0) scale(1.18) translate(-663.3 -130.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="609.8" y="106" width="107.0" height="48" fill="url(#body)"/>
+<rect x="609.8" y="106" width="107.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="609.8" y="106" width="107.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
+</g><clipPath id="c9"><rect x="730.8" y="106" width="233.0" height="48" rx="24"/></clipPath>
+<g clip-path="url(#c9)">
+<rect x="730.8" y="106" width="233.0" height="48" fill="#16161c"/>
+<g transform="translate(847.3 130.0) scale(1.18) translate(-847.3 -130.0)" filter="url(#frost)"><rect width="1200" height="188" fill="url(#dots)"/></g>
+<rect x="730.8" y="106" width="233.0" height="48" fill="url(#body)"/>
+<rect x="730.8" y="106" width="233.0" height="26.400000000000002" fill="url(#shine)"/>
+<rect x="730.8" y="106" width="233.0" height="48" rx="24" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" filter="url(#inner)"/>
 </g>
-<rect x="299.95" y="34.75" width="84.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="399.95" y="34.75" width="147.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="562.95" y="34.75" width="105.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="683.95" y="34.75" width="95.0" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="794.55" y="34.75" width="105.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="236.95" y="106.75" width="105.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="357.95" y="106.75" width="126.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="499.95" y="106.75" width="95.0" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="610.55" y="106.75" width="105.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="731.55" y="106.75" width="231.5" height="46.5" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
-<text x="342.2" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Java</text><text x="473.8" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">JavaScript</text><text x="615.8" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Python</text><text x="731.5" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Shell</text><text x="847.2" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Gradle</text><text x="289.8" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Fabric</text><text x="421.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">NeoForge</text><text x="547.5" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Mixin</text><text x="663.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Sodium</text><text x="847.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff">Cloudflare Workers</text>
+<g clip-path="url(#all)"><rect class="sw" x="-400" y="0" width="300" height="188" fill="url(#sweep)" transform="skewX(-20)"/></g>
+<rect x="299.95" y="34.75" width="84.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="399.95" y="34.75" width="147.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="562.95" y="34.75" width="105.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="683.95" y="34.75" width="95.0" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="794.55" y="34.75" width="105.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="236.95" y="106.75" width="105.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="357.95" y="106.75" width="126.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="499.95" y="106.75" width="95.0" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="610.55" y="106.75" width="105.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/><rect x="731.55" y="106.75" width="231.5" height="46.5" rx="23.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+<text x="342.2" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Java</text><text x="473.8" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">JavaScript</text><text x="615.8" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Python</text><text x="731.5" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Shell</text><text x="847.2" y="65" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Gradle</text><text x="289.8" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Fabric</text><text x="421.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">NeoForge</text><text x="547.5" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Mixin</text><text x="663.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Sodium</text><text x="847.2" y="137" text-anchor="middle" font-size="18" font-weight="600" fill="#fff" fill-opacity=".92">Cloudflare Workers</text>
 </g>
 </svg>
