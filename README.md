@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=180&section=header&text=surge&fontSize=70&fontColor=c0caf5&animation=fadeIn&fontAlignY=35&desc=cybersecurity%20geek%20%E2%80%A2%20minecraft%20modder&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://github.com/SU4G3">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Privacy+%26+anti-fingerprinting+tools;Fabric+%2F+NeoForge+mods+for+Minecraft;Rendering+performance+hacks+for+Sodium;Telegram+bots+and+automation" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Privacy+%26+anti-fingerprinting+tools;Fabric+%2F+NeoForge+mods+for+Minecraft;Rendering+performance+hacks+for+Sodium" alt="Typing SVG"/>
 </a>
 
 <br/>
@@ -55,7 +55,6 @@ currently: making Minecraft clients harder to fingerprint and faster to render
 <img src="https://img.shields.io/badge/NeoForge-D7742F?style=flat-square" alt="NeoForge"/>
 <img src="https://img.shields.io/badge/Mixin-4A4A4A?style=flat-square" alt="Mixin"/>
 <img src="https://img.shields.io/badge/Sodium-5A9BD5?style=flat-square" alt="Sodium"/>
-<img src="https://img.shields.io/badge/Telegram_Bots-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"/>
 
 </div>
 
@@ -63,7 +62,7 @@ currently: making Minecraft clients harder to fingerprint and faster to render
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=SU4G3&show_icons=true&theme=tokyonight&hide_border=true" alt="stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SU4G3&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="top langs"/>
 
 <img src="https://streak-stats.demolab.com?user=SU4G3&theme=tokyonight&hide_border=true" alt="streak"/>
